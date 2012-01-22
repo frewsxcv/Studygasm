@@ -10,7 +10,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/home/ubuntu/dev/etc/db.sqlite',
+        'NAME': '/home/ubuntu/dev/Studygasm/etc/db.sqlite',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
@@ -54,16 +54,16 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/home/ubuntu/dev/Studygasm/srv/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = 'http://studygasm.com:8000/'
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
 # Examples: "http://foo.com/static/admin/", "/static/admin/".
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+ADMIN_MEDIA_PREFIX = 'http://studygasm.com:8000/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -101,6 +101,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'srv.urls'
 
 TEMPLATE_DIRS = (
+    "/home/ubuntu/dev/Studygasm/srv/templates",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -140,7 +141,7 @@ FACEBOOK_APP_ID = '162966970479641'
 FACEBOOK_API_SECRET = 'b2d23b4c866ea9359472323d17ea7d2f'
 
 LOGIN_URL = '/login-form/'
-LOGIN_REDIRECT_URL = '/logged-in/'
+LOGIN_REDIRECT_URL = '/prompt-calpoly/'
 LOGIN_ERROR_URL = '/login-error/'
 
 SOCIAL_AUTH_COMPLETE_URL_NAME  = 'socialauth_complete'

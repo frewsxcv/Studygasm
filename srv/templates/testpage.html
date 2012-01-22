@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Studygasm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{{ STATIC_URL}}/stylesheet2.css" />
+<link rel="stylesheet" href="{{ STATIC_URL}}/tipsy.css" />
+<link rel="shortcut icon" href="{{ STATIC_URL}}/ogo_face_favicon.png" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}/jquery.slideto.js" type="text/javascript"></script>
+<script src="{{ STATIC_URL }}/jquery.tipsy.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	$("#top").click(function(){
+		$("#top-id").slideto({highlight: false});
+	});
+	
+	$("#calendar").click(function(){
+		$("#cal-id").slideto({highlight: false});
+	});
+	
+	$("#syllabus").click(function(){
+		$("#syl-id").slideto({highlight: false});
+	});
+	
+	$("#qa").click(function(){
+		$("#qa-id").slideto({highlight: false});
+	});
+	
+	$("#calendar2").click(function(){
+		$("#cal-id").slideto({highlight: false});
+	});
+	
+	$("#syllabus2").click(function(){
+		$("#syl-id").slideto({highlight: false});
+	});
+	
+	$("#qa2").click(function(){
+		$("#qa-id").slideto({highlight: false});
+	});
+	
+	$("#comingsoon").click(function(){
+		$("#cs-id").slideto({highlight: false});
+	});
+
+   $("#mojo").tipsy({ gravity: "n" });
+});
+</script>
+
+</head>
+<body>
+<center>
+
+<div id="top-bar">
+	<div id="topbar-inner" style="text-align: center">
+    <a href="#top" id="top">Home</a>
+    <a href="#calendar" id="calendar">Calendar</a>
+    <a href="#syllabus" id="syllabus">Syllabus</a>
+    <a href="#qa" id="qa">Q & A</a>
+    <a href="#comingsoon" id="comingsoon">Coming Soon</a>
+    
+    <span style="padding-left: 150px" id="mojo" original-title="What is Mojo? Points accumulated for top-notch effort and participation. The top students who earn the most Mojo points will be rewarded with freegasms at the end of the term."><font color="red"><b>Mojo: 500</b></font></span>
+    <a href="/logout">Logout</a>
+    </div>
+</div>
+</center>
+</div>
+	
+<a name="top" id="top-id"></a>
+    
+<div id="bar">
+	<center>
+	<div id="bar-inner">
+    <img src="{{ STATIC_URL}}/banner_red.png" />
+    </div>
+    </center>
+</div>
+
+<center>
+<div id="content" style="position: relative; left: -70px;">
+
+<table>
+<tr><td>
+<div id="box" style="width: 500px; height: 250px">
+<h1>Welcome to Studygasm!</h1>
+
+Studygasm is a kick ass place for students to share information and post questions anonymously to your entire class.<p>
+
+We believe that a comfortable space free of professors provides a team atmosphere for students to get through their quarter or semester together.<p>
+
+Earn mojo, have studygasms, and get hooked up with cool stuff come finals week.
+</div>
+</td><td>
+<div id="box" style="width: 225px; height: 250px;">
+<h1><a href="#syllabus" id="syllabus2">Syllabus</a></h1>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor massa, facilisis ut congue sed, ornare nec tellus. <p>
+</div>
+</td></tr></table>
+
+<p>
+
+<table>
+<tr><td>
+<div id="box" style="width: 450px; height: 250px">
+<h1><a href="#qa" id="qa2">Q&A</a></h1>
+
+<div style="overflow:auto; width: 100%; height: 180px">
+<img src="{{ STATIC_URL}}/qa-mockup-small.png" />
+</div>
+
+</div>
+</td><td>
+<div id="box" style="width: 275px; height: 250px;">
+<h1><a href="#calendar" id="calendar2">Calendar</a></h1>
+<center><img src="{{ STATIC_URL}}/calendar.png" /></center>
+</div>
+</td></tr>
+</table>
+
+</div>
+
+<!-- CALENDAR -->
+
+<div id="window">
+
+<div id="content" style="text-align: right">
+<a name="calendar" id="cal-id"></a>
+<table><tr><td style="text-align:left">
+<span style="position: relative; left: 75px; top: 75px; z-index:990"><img src="{{ STATIC_URL}}/calendar-head.png"/></span>
+</td></tr>
+<tr><td>
+<div id="box" style="position: relative; left: 150px; width: 575px; height: 400px; text-align:left; padding: 20px;">
+
+   <center>
+	<div style="overflow:auto; width: 560px; height: 375px; position: relative; top: 45px;">
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6kpm8mhlhnhe5e4rim7bssspq4%40group.calendar.google.com&amp;color=%23875509&amp;src=ifdh9n138e550ovjv271l1961s%40group.calendar.google.com&amp;color=%23711616&amp;src=studygasm%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="560" height="350" frameborder="0" scrolling="no"></iframe>
+   </div>
+   </center>
+
+</div>
+</td></tr>
+</table>
+</div>
+</div>
+
+
+<!-- SYLLABUS -->
+
+<div id="window">
+
+<div id="content" style="text-align: right">
+<a name="syllabus" id="syl-id"></a>
+<table><tr><td style="text-align:left">
+<span style="position: relative; left: 75px; top: 75px; z-index:990"><img src="{{ STATIC_URL}}/syllabus-head.png" /></span>
+</td></tr>
+<tr><td>
+<div id="box" style="position: relative; left: 150px; width: 575px; height: 400px; text-align:left; padding: 20px;">
+
+<div style="overflow:auto; width: 100%; height: 375px; position: relative; top: 25px;">
+  <h1>History 214</h1>
+  <h2>Political Economy of Latin America and the Middle Ease</h2>
+  
+  (G.E. area D2)
+
+  <p>A comparative examination of socio-economic structures of the Middle East and Latin America in the framework of global economy.<br />
+    The course will analyze the historical context of integration of these two regions in the international economic system and the local reactions to the impacts of global forces on national structures.
+  </p>
+  
+<h2>Instructor: Manzar Foroohar</h2>
+  <p>Office Hours: Tu. 2:10-3:00; Th. 11:10-12:00 &amp; 2:10-4:00 p.m.<br />
+    Building 47, Room 25B<br />
+    756-2068/756-2543<br />
+  mforooha@calpoly.edu</p>
+  <p><strong>Required Readings:</strong><br />
+  <br />
+    Stephen Schlesinger &amp; Stephen Kinzer, Bitter Fruit
+    <br />
+    History 214 Supplemental Reading (on Blackboard)</p>
+<h2>Course Requirements: </h2>
+  <p>Each student will be required to write two essay exams (short essays, in class).<br />
+    Each exam will count for 30% of the grade. Two more tests (true/false questions) will each count for 20% of the final grade.</p>
+  <p><strong>Instructor&rsquo;s Policies</strong><br />
+    <br />
+    No make-up tests or &quot;incomplete&quot; will be given except for compelling and documented reasons (serious illness, permanent job interview, family emergency)..<br />
+    Students are expected to participate in class discussions and will be penalized for failure to attend the class.</p>
+  <p><strong>Academic Dishonesty</strong></p>
+<p>    The Campus Administrative Manual (CAM, Section 684) states: &quot;The University will not condone academic cheating or plagiarism in any form.&quot; Cheating and plagiarizing are serious offences and will be dealt with accordingly. Consequences include, but are not limited to, receiving an F in the course and being reported to Judicial Affairs.&quot;</p>
+  </div>
+  
+</div>
+</td></tr>
+</table>
+</div>
+</div>
+
+<!-- Q&A -->
+
+<div id="window">
+
+<div id="content" style="text-align: right">
+<a name="qa" id="qa-id"></a>
+<table><tr><td style="text-align:left">
+<span style="position: relative; left: 75px; top: 75px; z-index:990"><img src="{{ STATIC_URL}}/qa-head.png" /></span>
+</td></tr>
+<tr><td>
+<div id="box" style="position: relative; left: 150px; width: 575px; height: 400px; text-align:left; padding: 20px;">
+
+	<div style="overflow:auto; overflow-x: hidden; width: 100%; height: 375px; position: relative; top: 25px;">
+<img src="{{ STATIC_URL}}/qa-mockup.png" />
+  	</div>
+</div>
+</td></tr>
+</table>
+</div>
+</div>
+
+<!-- COMING SOON -->
+
+<div id="window">
+
+<div id="content" style="text-align: right">
+<a name="comingsoon" id="cs-id"></a>
+<table><tr><td style="text-align:left">
+</td></tr>
+<tr><td>
+<div style="position: relative; left: 150px; width: 575px; height: 400px; text-align:left; padding: 20px;">
+
+	<div style="width: 560px; height: 375px; position: relative; top: 50px;">
+<img src="{{ STATIC_URL}}/comingsoon.png" />
+  	</div>
+</div>
+
+</td></tr>
+</table>
+</div>
+</div>
+
+<!-- FOOTER -->
+
+<div style="background-image:url({{ STATIC_URL }}/bottom-bg.png); background-repeat:repeat-x; height: 130px; position: absolute; left: 0px; width: 100%">
+
+<center>
+<div style="width:1024px; height: 130px; background-image:url({{ STATIC_URL }}/footer.png); background-repeat:no-repeat; text-align: right;display:table-cell; vertical-align:middle;">
+
+<span style="padding-right: 70px">
+<a href="https://www.facebook.com/pages/Studygasm/261593127242226" target="_blank"><img src="{{ STATIC_URL}}/facebook.png" /></a>
+
+<a href="http://www.twitter.com/studygasm" target="_blank"><img src="{{ STATIC_URL}}/twitter.png" /></a>
+
+</span>
+</div>
+</center>
+
+</div>
+
+</body>
+</html>

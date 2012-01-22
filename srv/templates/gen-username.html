@@ -1,0 +1,85 @@
+<!doctype html system "html.dtd">
+<html>
+<head>
+<script type="text/javascript" src="{{ STATIC_URL }}/jquery.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/thickbox.js"></script>
+<link rel="stylesheet" href="{{ STATIC_URL }}/thickbox.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="{{ STATIC_URL }}/logo_face_favicon.png" />
+<title>Studygasm</title>
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body
+{
+	background-color: #c50a00;
+}
+.splash {
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -300px 0 0 -400px;
+}
+#nametag{
+	background: url("{{ STATIC_URL }}/namebadge.png") no-repeat;
+	width: 530px;
+	margin: 0px auto;
+	font-size: 60px;
+	font-family: 'Handlee', 'brush script mt', cursive;
+	text-shadow: 2px 2px 2px #000;
+	padding: 118px 0 18px 0;
+	position: relative;
+}
+#name
+{
+	padding: 0 22px 0 10px;
+	height: 162px;
+}
+#nextstep
+{
+		
+}
+td {
+	padding-left: 20px;
+	padding-right: 20px;	
+}
+</style>
+
+{% if first %}
+<script type="text/javascript">
+   window.onload = function () {
+      $("#hiddenbutton").click();
+   }
+</script>
+{% endif %}
+
+</head>
+<body>
+
+   <a id="hiddenbutton" style="display:none" href="#TB_inline?height=200&width=300&inlineId=whyanonymous&modal=true" class="thickbox">Show hidden modal content.</a>
+   <div id="whyanonymous" style="display:none">
+      <p style="font-size: 20px; line-height: 20px;">Never again will you be afraid to post a question about a topic you don’t understand, or on an upcoming assignment. Through our username generator, you will be able to remain anonymous and have an exciting username!</p>
+      <p style="text-align:center"><input type="submit" id="Login" value="&nbsp;&nbsp;Close&nbsp;&nbsp;" onclick="tb_remove()" /></p>
+   </div>
+
+<div class="splash">
+	<img src="{{ STATIC_URL }}/studygasmfront.png">
+	<center>
+	<div id="nametag">
+		<div id="name">{{ username|safe }}</div>
+	</div>
+
+	<div id="nextstep">
+		<table>
+		<tr><td>
+		<a href="/gen-username?f=no"><img src="{{ STATIC_URL }}/hateit.png"></a>
+		</td><td>
+		<a href="/select-class"><img src="{{ STATIC_URL }}/loveit.png"></a>
+		</td></tr>
+		</table>
+	<div>
+</center>
+</div>
+</body>
+</html>

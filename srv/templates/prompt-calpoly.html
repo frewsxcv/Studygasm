@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Studygasm</title>
+
+<link rel="shortcut icon" href="{{ STATIC_URL }}/logo_face_favicon.png" />
+<style type="text/css">
+<!--
+body {
+	background-color: #c50a00;	
+}
+
+a {
+   color: #eee;
+   font-size: 16px;
+}
+
+a:hover {
+   color: #ccc;
+}
+
+.splash {
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -300px 0 0 -400px;
+}
+
+.description {
+	font-family: Helvetica;
+	font-size: 36px;
+	color: #ffffff;
+	width: 700px;
+	text-align: left;
+	margin-top: 50px;
+	line-height: 24px;
+}
+
+.connect {
+	margin-top: 50px;	
+}
+
+td {
+	padding-left: 20px;
+        padding-right: 20px;	
+}
+
+a img {
+	border: 0;
+}
+
+-->
+</style>
+
+</head>
+
+<body>
+
+<div class="splash">
+<img src="{{ STATIC_URL }}/studygasmfront.png">
+<center>
+
+<form action="/gen-username?first=true" method="get">
+<div class="description">
+  <p>Welcome to Studygasm, {{ user.first_name }} {{ user.last_name }}!</p>
+  <p style="font-size: 22px">Thanks for joining! Your Cal Poly email will be used to ensure that you are a current Cal Poly student. If you are not a Cal Poly student, we have plans to expand this service to other universities.</p>
+  <p style="font-size: 22px">Please enter your Cal Poly email: <input placeholder="ex. jsmithe@calpoly.edu" type="text" /><input type="submit" value="next" /></p>
+  
+  <p style="text-align: right"><a href="http://studygasm.com/denied/">Teacher? Enter here</a></p>
+</div>
+</form>
+
+<div class="connect">
+
+</center>
+</div>
+
+</body>
+
+</html>
