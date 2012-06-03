@@ -9,6 +9,8 @@ from core.views import denied
 
 admin.autodiscover()
 
+handler404 = 'core.views.fourohfour'
+
 urlpatterns = patterns('',
     url(r'', include('social_auth.urls')),
     url(r'^admin/', include(admin.site.urls)),
