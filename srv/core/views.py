@@ -16,6 +16,10 @@ def prompt_calpoly(request):
     return render(request, "prompt-calpoly.html", {"user": request.user})
 
 
+def fourohfour(request):
+    return render(request, "404.html")
+
+
 def test_page(request):
     return render(request, "testpage.html")
 
